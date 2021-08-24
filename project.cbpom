@@ -1,0 +1,9 @@
+project:
+    groupId: 'com.agentdid127'
+    artifactId: 'Test2'
+    version: '1.0-SNAPSHOT'
+    
+    build:
+      defaultGoal: 'clean install'
+      finalName: 'Test'
+      mainClass: 'com.agentdid127.Test2.Main'

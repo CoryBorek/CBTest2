@@ -1,0 +1,22 @@
+package: com.agentdid127.Test2
+
+class:
+  setup: 'public ;; Main'
+  functions:
+    - function: 'public static void main'
+      args: 'String[] args'
+      items:
+        - var: 'int ;; test'
+          data: ';;Integer.parseInt(args[0])'
+        - while: 'test <= 15'
+          items:
+            - var: ' ;; test'
+              data: ';;test + 1'
+            - if: 'test == 2'
+              items:
+                - runfn: 'System.out.println'
+                  args: 'Hello,, Number 2!'
+            - runfn: 'System.out.println'
+              args: ';;test'
+        - runfn: 'System.out.println'
+          args: 'Thanks for watching!'
